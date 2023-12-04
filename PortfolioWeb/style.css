@@ -243,5 +243,92 @@ nav #en-button {
     transition: filter 0.5s ease;
     filter: grayscale(100%);
   }
-  
+
+  #projects {
+    display: flex;
+    justify-content: space-around;
+    background-color: #031625;
+    color: #fff;
+}
+
+.project-item {
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    width: 25%;
+    height: 50vh;
+    min-height: 600px;
+    color: #fff;
+    overflow: hidden;
+    transition: width 0.5s ease;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.project-bg {
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-size: cover;
+    background-position: center center;
+    transition: filter 0.5s ease;
+    filter: grayscale(100%);
+}
+
+.project-item:hover .project-bg {
+    filter: grayscale(0);
+}
+
+
+#contact .container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #031625;
+    color: #fff;
+}
+
+
+.contact-widget {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.contact-widget .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: bottom;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.contact-widget:hover .overlay {
+  opacity: 1;
+}
+
+.contact-widget img {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px;
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
   
