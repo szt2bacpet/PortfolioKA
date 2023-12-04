@@ -286,7 +286,7 @@ nav #en-button {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #031625;
+    background-color: #000;
     color: #fff;
 }
 
